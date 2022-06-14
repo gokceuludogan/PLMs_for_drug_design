@@ -2,7 +2,7 @@
 
 ## About
 
-Code for the paper "Exploiting Pretrained Biochemical Language Models for Targeted Drug Design", to appear in *Bioinformatics*.
+Code for the paper "Exploiting Pretrained Biochemical Language Models for Targeted Drug Design", to appear in *ECCB2022 Proceedings*.
 
 ![](Transformers-Strategies.jpg)
 
