@@ -87,11 +87,4 @@ One can also provide PDB ID of a protein structure and ID of the ligand in compl
 python src/run_docking.py --target_pdb_id {PDB_ID} --ligand_id {ligand_ID} --mol_file {path_to_sdf}
 ```
 
-### Citation
-
- If you find this repository useful in your research, please cite the following paper:
-
-```
-
-```
 
