@@ -2,7 +2,7 @@
 
 ## About
 
-Code for the paper "Exploiting Pretrained Biochemical Language Models for Targeted Drug Design", to appear in *ECCB2022 Proceedings*.
+This repository contains code for "Exploiting Pretrained Biochemical Language Models for Targeted Drug Design", to appear in *Bioinformatics, Proceedings of ECCB2022*. The accompanying materials are available in [Zenodo](https://zenodo.org/record/6832145) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6832145.svg)](https://doi.org/10.5281/zenodo.6832145)
 
 ![](Transformers-Strategies.jpg)
 
@@ -39,7 +39,7 @@ python src/molecular_evaluation.py --model models/ChemBERTaLM
 
 ### Target Specific Models
 
-Training target specific models require protein-ligand interactions from BindingDB. Data must be first prepared by following instructions described in `notebooks/`
+Training target specific models require protein-ligand interactions from BindingDB. Data must be first prepared by following instructions described in `notebooks/` or downloaded from [corresponding Zenodo repository](https://zenodo.org/record/6832146)
 
 Targeted generative models can be then finetuned with initializing from ProteinRoBERTa and ChemBERTa variants (ChemBERTaLM or the original ChemBERTa)
 ```bash
@@ -87,4 +87,16 @@ One can also provide PDB ID of a protein structure and ID of the ligand in compl
 python src/run_docking.py --target_pdb_id {PDB_ID} --ligand_id {ligand_ID} --mol_file {path_to_sdf}
 ```
 
+## Citation
+
+```
+@article{10.1093/bioinformatics/btac482,
+    author = {Uludoğan, Gökçe and Ozkirimli, Elif and Ulgen, Kutlu O. and Karalı, Nilgün Lütfiye and Özgür, Arzucan},
+    title = "{Exploiting Pretrained Biochemical Language Models for Targeted Drug Design}",
+    journal = {Bioinformatics},
+    year = {2022},
+    doi = {10.1093/bioinformatics/btac482},
+    url = {https://doi.org/10.1093/bioinformatics/btac482}
+}
+```
 
